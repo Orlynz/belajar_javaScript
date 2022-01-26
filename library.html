@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="tambah"></p>
+    <p id="00"></p>
+    <p id="demo"></p>
+
+    <script>
+      var x = tambah(11, 11);
+      document.getElementById("tambah").innerHTML = x;
+
+      function tambah(a, b) {
+        return a + b;
+      }
+      var opo = "Orlynz Sambora";
+      document.getElementById("00").innerHTML = opo;
+      const laptop = [
+        "RAM",
+        "Processor",
+        "Harddisk",
+        "LCD",
+        "Motherboard",
+        "Chasing",
+        "Keyboard",
+        "Touchpad",
+        "Baterai",
+        "GPU",
+      ];
+      document.write("<ol>");
+      for (let i = 0; i < laptop.length; i++) {
+        document.write(`<li>${laptop[i]}`);
+      }
+      document.write("</ol>");
+      document.getElementById("demo").innerHTML;
+    </script>
+  </body>
+</html>

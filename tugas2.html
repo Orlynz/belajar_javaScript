@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <div>
+      <input type="number" id="nilai" class="form-control" />
+      <input
+        style="width: 100px"
+        class="tombol"
+        type="button"
+        onclick="nilai()"
+        value=" = "
+      />
+    </div>
+    <p id="demo"></p>
+    <script>
+      function nilai() {
+        let hasil;
+        let nilai = document.getElementById("nilai").value;
+        if (nilai > 90) {
+          hasil = "Grade = A";
+        } else if (nilai > 80) {
+          hasil = "Grade = B+";
+        } else if (nilai > 70) {
+          hasil = "Grade = B";
+        } else {
+          hasil = "Grade = F";
+        }
+        document.getElementById("demo").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>

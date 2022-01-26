@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex">
+      <form name="calculator">
+        <h3>TAMBAH</h3>
+        <label>A</label>
+        <input type="number" name="a" /> <br /><br />
+        <label>B</label>
+        <input type="number" name="b" /> <br /><br />
+        <label>C</label>
+        <input type="number" name="c" /> <br /><br />
+        <input
+          style="margin-left: 86px"
+          type="button"
+          onclick="tambah()"
+          value=" = "
+        />
+        <br /><br />
+        <label>X</label>
+        <input type="text" disabled name="hasil" />
+      </form>
+      <div style="margin-left: 50px">
+        <form name="calculator1">
+          <h3>KURANG</h3>
+          <label>A</label>
+          <input type="number" name="a" /> <br /><br />
+          <label>B</label>
+          <input type="number" name="b" /> <br /><br />
+          <label>C</label>
+          <input type="number" name="c" /> <br /><br />
+          <input
+            style="margin-left: 86px"
+            type="button"
+            onclick="kurang()"
+            value=" = "
+          />
+          <br /><br />
+          <label>X</label>
+          <input type="text" disabled name="hasil" />
+        </form>
+      </div>
+      <div style="margin-left: 50px">
+        <form name="calculator2">
+          <h3>KALI</h3>
+          <label>A</label>
+          <input type="number" name="a" /> <br /><br />
+          <label>B</label>
+          <input type="number" name="b" /> <br /><br />
+          <label>C</label>
+          <input type="number" name="c" /> <br /><br />
+          <input
+            style="margin-left: 86px"
+            type="button"
+            onclick="kali()"
+            value=" = "
+          />
+          <br /><br />
+          <label>X</label>
+          <input type="text" disabled name="hasil" />
+        </form>
+      </div>
+      <div style="margin-left: 50px">
+        <form name="calculator3">
+          <h3>BAGI</h3>
+          <label>A</label>
+          <input type="number" name="a" /> <br /><br />
+          <label>B</label>
+          <input type="number" name="b" /> <br /><br />
+          <label>C</label>
+          <input type="number" name="c" /> <br /><br />
+          <input
+            style="margin-left: 86px"
+            type="button"
+            onclick="bagi()"
+            value=" = "
+          />
+          <br /><br />
+          <label>X</label>
+          <input type="text" disabled name="hasil" />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function tambah() {
+        var a = parseFloat(document.calculator.a.value);
+        var b = parseFloat(document.calculator.b.value);
+        var c = parseFloat(document.calculator.c.value);
+        var hasil = a + b + c;
+        document.calculator.hasil.value = hasil;
+      }
+      function kurang() {
+        var a = parseFloat(document.calculator1.a.value);
+        var b = parseFloat(document.calculator1.b.value);
+        var c = parseFloat(document.calculator1.c.value);
+        var hasil = a - b - c;
+        document.calculator1.hasil.value = hasil;
+      }
+      function kali() {
+        var a = parseFloat(document.calculator2.a.value);
+        var b = parseFloat(document.calculator2.b.value);
+        var c = parseFloat(document.calculator2.c.value);
+        var hasil = a * b * c;
+        document.calculator2.hasil.value = hasil;
+      }
+      function bagi() {
+        var a = parseFloat(document.calculator3.a.value);
+        var b = parseFloat(document.calculator3.b.value);
+        var c = parseFloat(document.calculator3.c.value);
+        var hasil = a / b / c;
+        document.calculator3.hasil.value = hasil;
+      }
+    </script>
+  </body>
+</html>
